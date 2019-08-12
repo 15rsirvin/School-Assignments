@@ -1,0 +1,50 @@
+/home/rsir222/CS216/Lab1
+total 4
+-rw-rw-r-- 1 rsir222 rsir222 25 Aug 29 10:16 file1
+ _____________________________________
+< Hello, Yu Zhang. I am Robert Irvin. >
+ -------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+    1  ls
+    2  cd ..
+    3  ls
+    4  cd rsir222
+    5  pwd
+    6  cd ..
+    7  mkdir CS216
+    8  cd rsir222
+    9  mkdir CS216
+   10  cd CS216
+   11  mkdir Lab1
+   12  cd Lab1
+   13  1s
+   14  ls
+   15  pwd
+   16  pws > file1
+   17  pwd > file1
+   18  cat file1
+   19  ls -l
+   20  ls -l >> file1
+   21  LS
+   22  ls
+   23  cosway "Hello, Yu Zhang. I am Robert Irvin." >> file1
+   24  owsay "Hello, Yu Zhang. I am Robert Irvin." >> file1
+   25  cowsay "Hello, Yu Zhang. I am Robert Irvin." >> file1
+   26  cat file1
+   27  echo shell
+   28  echo $shell
+   29  echo $SHELL
+   30  man echo
+   31  history > file2
+                                                                             
+ mmmmmm           "                          mmm   mmmm   mmmm  mmm      mmm 
+ #      m mm    mmm    mmm   m   m         m"   " #"   " "   "#   #    m"   "
+ #mmmmm #"  #     #   #" "#  "m m"         #      "#mmm      m"   #    #m""#m
+ #      #   #     #   #   #   #m#          #          "#   m"     #    #    #
+ #mmmmm #   #     #   "#m#"   "#            "mmm" "mmm#" m#mmmm mm#mm   #mm#"
+                  #           m"                                             
+                ""           ""                                              

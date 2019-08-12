@@ -1,0 +1,532 @@
+malformed linespec error: unexpected number, "28"
+Breakpoint 1 at 0x5133: file Lab7.cpp, line 27.
+Note: breakpoint 1 also set at pc 0x5133.
+Breakpoint 2 at 0x5133: file Lab7.cpp, line 28.
+Breakpoint 3 at 0x528c: file Lab7.cpp, line 53.
+Breakpoint 4 at 0x5540: file Lab7.cpp, line 93.
+Breakpoint 5 at 0x5590: file Lab7.cpp, line 96.
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000005133 in main(int, char**) 
+                                                   at Lab7.cpp:27
+2       breakpoint     keep y   0x0000000000005133 in main(int, char**) 
+                                                   at Lab7.cpp:28
+3       breakpoint     keep y   0x000000000000528c in main(int, char**) 
+                                                   at Lab7.cpp:53
+4       breakpoint     keep y   0x0000000000005540 in main(int, char**) 
+                                                   at Lab7.cpp:93
+5       breakpoint     keep y   0x0000000000005590 in main(int, char**) 
+                                                   at Lab7.cpp:96
+Starting program: /home/robert/Documents/CS216/Lab7/Lab7 PA1_imdb.txt
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:28
+28	{
+$1 = 2
+A syntax error in expression, near `'.
+$2 = (const int *) 0x555555587cf0 <ARGUMENTS>
+30	    if (argc != ARGUMENTS)
+A syntax error in expression, near `in main'.
+$3 = 2
+Undefined command: "".  Try "help".
+$4 = (int *) 0x7fffffffda4c
+Quit
+37	    ifstream in_file;
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+$5 = {movies_db = std::map with 0 elements, 
+  actors_db = std::map with 0 elements}
+$6 = (IMDB *) 0x7fffffffdad0
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+55	        string line;
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+55	        string line;
+56	        getline(in_file, line);
+57	        string name, movie;
+58	        istringstream iss(line);
+59	        getline(iss, name,',');
+62	        iss>>ws;
+65	        set<string> movies;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+67	        while (getline(iss, movie, ','))
+75	        magicString actorName(name);
+76	        cs216_imdb.insert_an_actor(actorName.toLower(), movies);
+75	        magicString actorName(name);
+65	        set<string> movies;
+58	        istringstream iss(line);
+57	        string name, movie;
+55	        string line;
+53	    while (!in_file.eof())
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+55	        string line;
+56	        getline(in_file, line);
+57	        string name, movie;
+58	        istringstream iss(line);
+59	        getline(iss, name,',');
+62	        iss>>ws;
+65	        set<string> movies;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+67	        while (getline(iss, movie, ','))
+69	            movies.insert(movie);
+71	            iss>>ws;
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+55	        string line;
+56	        getline(in_file, line);
+57	        string name, movie;
+58	        istringstream iss(line);
+59	        getline(iss, name,',');
+62	        iss>>ws;
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Breakpoint 1 at 0x5133: file Lab7.cpp, line 27.
+Note: breakpoint 1 also set at pc 0x5133.
+Breakpoint 2 at 0x5133: file Lab7.cpp, line 28.
+Breakpoint 3 at 0x528c: file Lab7.cpp, line 53.
+Breakpoint 4 at 0x5540: file Lab7.cpp, line 93.
+Breakpoint 5 at 0x5590: file Lab7.cpp, line 96.
+Starting program: /home/robert/Documents/CS216/Lab7/Lab7 PA1_imdb.txt
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:28
+28	{
+23	
+24	// declare global variable (constant only)
+25	const int ARGUMENTS = 2;   // define the required command line arguments
+26	
+27	int main(int argc, char* argv[])
+28	{
+29	    // Check whether the number of command line arguments match the required one 
+30	    if (argc != ARGUMENTS)
+31	    {
+32	        cout << "Warning: need exactly one command line argument." << endl;
+$1 = (char ***) 0x7fffffffda40
+Quit
+$2 = (char **) 0x7fffffffe058
+$3 = (char **) 0x7fffffffe058
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+$4 = (char **) 0x7fffffffe058
+$5 = 0x7fffffffe383 "/home/robert/Documents/CS216/Lab7/Lab7"
+$6 = 0x7fffffffe3aa "PA1_imdb.txt"
+Quit
+$7 = (char **) 0x7fffffffe058
+Quit
+$8 = (char **) 0x7fffffffe060
+Quit
+$9 = (char **) 0x7fffffffe058
+Quit
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Undefined command: "cc".  Try "help".
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+Continuing.
+
+Breakpoint 3, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:53
+53	    while (!in_file.eof())
+No breakpoint number 53.
+Deleted breakpoint 3 
+Continuing.
+
+Breakpoint 4, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:93
+93	    magicString validName(inputname);
+$10 = (std::__cxx11::string *) 0x7fffffffdb70
+$11 = "toM hanKS"
+Continuing.
+
+Breakpoint 5, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:96
+96	    while (validName.toLower() != "quit")
+$12 = {str = "toM hanKS"}
+$13 = (magicString *) 0x7fffffffdb90
+magicString::toLower[abi:cxx11]() const (this=0x7fffffffdb90)
+    at magicString.cpp:35
+35	{
+$14 = "toM hanKS"
+$15 = (std::__cxx11::string *) 0x7fffffffdb90
+36	    string result = this->str;
+37	    transform(this->str.begin(), this->str.end(), result.begin(), ::tolower);
+$16 = "toM hanKS"
+$17 = (std::__cxx11::string *) 0x7fffffffdbd0
+38	    return result;
+$18 = "tom hanks"
+$19 = (std::__cxx11::string *) 0x7fffffffdbd0
+39	}
+main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:101
+101	        if (!cs216_imdb.isExistingActor(validName.toLower()))
+108	            set<string> movies_of_actor;
+109	            movies_of_actor = cs216_imdb.find_movies_for_an_actor(validName.toLower());
+111	            cout << endl << "You type: " << inputname << endl;
+No symbol "Movies_of_actor" in current context.
+106	        else   // if name is valid
+107	        {
+108	            set<string> movies_of_actor;
+109	            movies_of_actor = cs216_imdb.find_movies_for_an_actor(validName.toLower());
+110	
+111	            cout << endl << "You type: " << inputname << endl;
+112	            cout << validName.toUpper() << " is in: " << endl;
+113	    
+114	            // set up a counter: movieCount, to count the number of movies
+115	            int movieCount = 0;
+$20 = std::set with 4 elements = {[0] = "Catch Me If You Can", 
+  [1] = "Saving Private Ryan", [2] = "Sleepless in Seattle", 
+  [3] = "You Have Got Mail"}
+$21 = (std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > *) 0x7fffffffda70
+Quit
+112	            cout << validName.toUpper() << " is in: " << endl;
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffdb90)
+    at magicString.cpp:45
+45	{
+$22 = "toM hanKS"
+$23 = (std::__cxx11::string *) 0x7fffffffdb90
+47	    fcount++;   // increase count by one while calling the function
+48	    cout << "Calling the recursive function named " << __func__ << " : " << fcount  << " times." << endl;   // note that __func__ is macro for the funciton name, it may be different for different compiler
+$24 = 1
+$25 = (int *) 0x5555557a169c <magicString::toUpper[abi:cxx11]() const::fcount>
+50	    if (this->str.length() == 0)
+53	    string first = this->str.substr(0,1);
+54	    const char* front = first.c_str();
+56	    string result;
+57	    upperFront[0] = toupper(front[0]);
+58	    upperFront[1] = '\0';
+59	    result = upperFront;
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+61	    return result + part.toUpper();
+$26 = {str = "oM hanKS"}
+$27 = (magicString *) 0x7fffffffd9d0
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+$28 = {str = "oM hanKS"}
+$29 = (magicString *) 0x7fffffffd9d0
+56	    string result;
+53	    string first = this->str.substr(0,1);
+62	}
+main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:115
+115	            int movieCount = 0;
+116	            for (auto i = movies_of_actor.begin(); i != movies_of_actor.end(); i++)
+118	                movieCount++;
+119	                cout << "\t" << movieCount << ": \"" << *i << " \" with: "<< endl;
+121	                set<string> coactors = cs216_imdb.find_actors_in_a_movie(*i);
+122	                for (auto j = coactors.begin(); j != coactors.end(); j++)
+125	                    if (*j != validName.toLower())
+127	                        magicString name_to_display(*j);
+128	                        cout << "\t" << name_to_display.wordFormat()<< endl;
+127	                        magicString name_to_display(*j);
+122	                for (auto j = coactors.begin(); j != coactors.end(); j++)
+125	                    if (*j != validName.toLower())
+122	                for (auto j = coactors.begin(); j != coactors.end(); j++)
+131	                cout << "***********************************" << endl;
+121	                set<string> coactors = cs216_imdb.find_actors_in_a_movie(*i);
+116	            for (auto i = movies_of_actor.begin(); i != movies_of_actor.end(); i++)
+Continuing.
+
+Breakpoint 5, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:96
+96	    while (validName.toLower() != "quit")
+Starting program: /home/robert/Documents/CS216/Lab7/Lab7 PA1_imdb.txt
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:28
+28	{
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555559133 in main(int, char**) 
+                                                   at Lab7.cpp:27
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x0000555555559133 in main(int, char**) 
+                                                   at Lab7.cpp:28
+	breakpoint already hit 1 time
+4       breakpoint     keep y   0x0000555555559540 in main(int, char**) 
+                                                   at Lab7.cpp:93
+5       breakpoint     keep y   0x0000555555559590 in main(int, char**) 
+                                                   at Lab7.cpp:96
+No breakpoint number 3.
+Num     Type           Disp Enb Address            What
+5       breakpoint     keep y   0x0000555555559590 in main(int, char**) 
+                                                   at Lab7.cpp:96
+Starting program: /home/robert/Documents/CS216/Lab7/Lab7 PA1_imdb.txt
+
+Breakpoint 5, main (argc=2, argv=0x7fffffffe058) at Lab7.cpp:96
+96	    while (validName.toLower() != "quit")
+101	        if (!cs216_imdb.isExistingActor(validName.toLower()))
+108	            set<string> movies_of_actor;
+109	            movies_of_actor = cs216_imdb.find_movies_for_an_actor(validName.toLower());
+111	            cout << endl << "You type: " << inputname << endl;
+112	            cout << validName.toUpper() << " is in: " << endl;
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffdb90)
+    at magicString.cpp:45
+45	{
+47	    fcount++;   // increase count by one while calling the function
+48	    cout << "Calling the recursive function named " << __func__ << " : " << fcount  << " times." << endl;   // note that __func__ is macro for the funciton name, it may be different for different compiler
+50	    if (this->str.length() == 0)
+53	    string first = this->str.substr(0,1);
+54	    const char* front = first.c_str();
+56	    string result;
+57	    upperFront[0] = toupper(front[0]);
+58	    upperFront[1] = '\0';
+59	    result = upperFront;
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+61	    return result + part.toUpper();
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffd9d0)
+    at magicString.cpp:45
+45	{
+47	    fcount++;   // increase count by one while calling the function
+48	    cout << "Calling the recursive function named " << __func__ << " : " << fcount  << " times." << endl;   // note that __func__ is macro for the funciton name, it may be different for different compiler
+50	    if (this->str.length() == 0)
+53	    string first = this->str.substr(0,1);
+54	    const char* front = first.c_str();
+56	    string result;
+57	    upperFront[0] = toupper(front[0]);
+58	    upperFront[1] = '\0';
+59	    result = upperFront;
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+61	    return result + part.toUpper();
+$30 = {str = "M hanKS"}
+$31 = (magicString *) 0x7fffffffd900
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffd900)
+    at magicString.cpp:45
+45	{
+47	    fcount++;   // increase count by one while calling the function
+48	    cout << "Calling the recursive function named " << __func__ << " : " << fcount  << " times." << endl;   // note that __func__ is macro for the funciton name, it may be different for different compiler
+50	    if (this->str.length() == 0)
+53	    string first = this->str.substr(0,1);
+54	    const char* front = first.c_str();
+56	    string result;
+57	    upperFront[0] = toupper(front[0]);
+58	    upperFront[1] = '\0';
+59	    result = upperFront;
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+$32 = {str = ""}
+$33 = (magicString *) 0x7fffffffd830
+magicString::magicString (this=0x7fffffffd830, ini_string="")
+    at magicString.cpp:14
+14	magicString::magicString(string ini_string)
+16	    this->str = ini_string;
+17	}
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffd900)
+    at magicString.cpp:61
+61	    return result + part.toUpper();
+$34 = {str = " hanKS"}
+$35 = (magicString *) 0x7fffffffd830
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffd830)
+    at magicString.cpp:45
+45	{
+47	    fcount++;   // increase count by one while calling the function
+48	    cout << "Calling the recursive function named " << __func__ << " : " << fcount  << " times." << endl;   // note that __func__ is macro for the funciton name, it may be different for different compiler
+50	    if (this->str.length() == 0)
+53	    string first = this->str.substr(0,1);
+54	    const char* front = first.c_str();
+56	    string result;
+57	    upperFront[0] = toupper(front[0]);
+58	    upperFront[1] = '\0';
+59	    result = upperFront;
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+$36 = {str = ""}
+Quit
+$37 = (magicString *) 0x7fffffffd760
+61	    return result + part.toUpper();
+$38 = {str = "hanKS"}
+$39 = (magicString *) 0x7fffffffd760
+magicString::toUpper[abi:cxx11]() const (this=0x7fffffffd760)
+    at magicString.cpp:45
+45	{
+47	    fcount++;   // increase count by one while calling the function
+48	    cout << "Calling the recursive function named " << __func__ << " : " << fcount  << " times." << endl;   // note that __func__ is macro for the funciton name, it may be different for different compiler
+50	    if (this->str.length() == 0)
+53	    string first = this->str.substr(0,1);
+54	    const char* front = first.c_str();
+56	    string result;
+57	    upperFront[0] = toupper(front[0]);
+58	    upperFront[1] = '\0';
+59	    result = upperFront;
+60	    magicString part(this->str.substr(1, this->str.length()-1));
+$40 = {str = ""}
+61	    return result + part.toUpper();
+$41 = {str = "anKS"}
+$42 = (magicString *) 0x7fffffffd690
+No symbol "y" in current context.

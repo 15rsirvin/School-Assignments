@@ -1,0 +1,6 @@
+#!/bin/bash
+# test command line arguments
+coursename=$1
+echo ’I am taking $# courses.’
+echo "I am taking $# courses.
+"echo "It’s fun to take \"$coursename\"."

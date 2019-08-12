@@ -1,0 +1,15 @@
+Sample tests for cs315003f18 pa2 -- cycles with a diagonal
+-------------------------
+
+These tests are adjacency matrices for  graphs that are cycles with one diagonal.
+Graphs are of sizes 10, 100, 1000, 10000 and 30000
+
+10000c.in	1000c.in	100c.in		10c.in		20c.in		30000c.in	README-tests1
+10000c.out	1000c.out	100c.out	10c.out		20c.out		30000c.out
+
+The graphs are constructed in such a way that node 1 is the center, except for 20c.in.
+Note that the the program for graph of size 30000 may run a few minutes, if it is not optimized. 
+
+The edge weights (entries in the matrix)  are relatively samll.  To test how
+your programs handle large numbers youmay want to change some weights.
+

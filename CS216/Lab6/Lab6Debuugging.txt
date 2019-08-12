@@ -1,0 +1,47 @@
+part 1)
+#4  0x00005555555597ad in analyzeCoActors (imdb=...) at Lab6.cpp:138
+138	                cout << *j << endl;
+(gdb) up
+#5  0x00005555555593b6 in main (argc=2, argv=0x7fffffffe048) at Lab6.cpp:105
+105	            case 2: analyzeCoActors(cs216_imdb);
+
+part 2.)
+1.) The program goes into an endless loop because the program is expecting an integer, but then fails to properly extract non-integer values to verify/handle inputs. Specifically, the input stream is not cleared so when the loop is rentered (after an invalid input) the program never stops to get a new user input and enters an infinite loop.
+
+2.) ""
+
+3.) My solution was to move the cin.ignore() to inside the cin.fail() loop and add a cin.clear() as follows.
+
+...
+...
+cout << "This application stores information about Actors and their Movies, please choose your option (Enter Q or q to quit):" << endl;
+        cout << "1. Actors in Movies" << endl;
+        cout << "2. Actors and co-actors" << endl;
+        cin >> option;
+
+        if (cin.fail())
+        {
+            string input_to_check;
+	    cin.clear();
+            cin >> input_to_check;
+            cin.ignore(256,'\n');
+
+            if (input_to_check == "Q" || input_to_check == "q")
+                break;
+            else
+            {
+                cout << "Invalid option!" << endl;
+                
+                continue;
+            }
+        }
+
+        cin.ignore(256, '\n');
+...
+...
+
+Now the fail state is being cleared and the rest of the characters in the intial input stream are being ignored after what was next in the string was copied to the variable input_to_check. 
+
+We also add a cin.ignore() at the end of the if loop so that the cin stream is cleared before calling a switch optioin (some of which contain getline() which will not work if the stream isn't clear)
+
+
